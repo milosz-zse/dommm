@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FirstOnitMauiApp"
+
+             x:Class="FirstOnitMauiApp.MainPage">
+    <ContentPage.BindingContext>
+        <local:dispalingEntrythisngs />
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <StackLayout HorizontalOptions="Center">
+            <Label Text="eeee"/>
+            <Entry Text="{Binding EnterdName}"/>
+            <Button
+             Text="Display text"
+             Command="{Binding ClickForDisplayingEntryOnLabel}" />
+            <Label Text="{Binding DisplayEntryOnThisLabel}" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
